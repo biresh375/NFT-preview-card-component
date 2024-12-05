@@ -1,0 +1,170 @@
+:root{
+    --SoftBlue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--VerydarkBlue-mainBG: hsl(217, 54%, 11%);
+--VerydarkBlue-maincardBG: hsl(214, 68%, 7%);
+--VerydarkBlue_cardBG: hsl(216, 50%, 16%);
+--VerydarkBlue_line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Outfit", serif;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    padding: 0;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: "Outfit", serif;
+    background-color: var(--VerydarkBlue-mainBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 610px;
+   background-color: hsl(214, 68%, 7%, .3);
+   border-radius: 35px;
+   position: relative;
+   
+   
+
+}
+.card{
+    width:350px ;
+    height: 600px;
+    border-radius: 15px;
+    background-color: var(--VerydarkBlue_cardBG);
+    padding: 25px;
+    position: absolute;
+    top: -30px ;
+}
+.image{
+   
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom:15px ;
+}
+
+.image-equilibrium{
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.overlay{
+    position: relative;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background-color: var(--Cyan);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_view{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    
+}
+.image:hover .overlay{
+    opacity: .5;
+}
+
+
+
+
+h1{
+    color: var(--White);
+    font-size: 24px;
+    cursor: pointer;
+}
+h1:hover{
+    color: var(--Cyan);
+}
+.promotion_message{
+    color: var(--SoftBlue);
+    margin-bottom: 25px;
+}
+
+.icon_ethereum_message{
+    display: inline-block;
+    font-weight: 500;
+    color: var(--Cyan);
+}
+.icon_clock{
+    position: relative;
+    top: 2px;
+    margin-left: 90px;
+}
+.icon_clock_message{
+    font-size: 16px;
+    display: inline-block;
+    color: var(--SoftBlue);
+    margin-bottom: 25px;
+}
+hr{
+    border: .5px solid var(--VerydarkBlue_line);
+    opacity: .6;
+    
+}
+.image_avater{
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+.avater_message{
+    display: inline-block;
+    color: var(--SoftBlue);
+    font-weight: 400;
+    position: relative;
+    top: -15px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.avater_message span{
+    color:var(--White);
+    cursor: pointer;
+    
+}
+.avater_message span:hover{
+    color: var(--Cyan);
+}
+
+@media screen and (max-width: 300px){
+    
+}
